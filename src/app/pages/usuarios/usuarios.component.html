@@ -1,0 +1,6 @@
+<app-nav></app-nav>
+<p *ngIf="!userLoginON" class="alert alert-danger">Usuario NO autenticado</p>
+<div *ngIf="userLoginON">
+    <p class="display-6 text-center my-5">Tabla de usuarios</p>
+    <app-user-list></app-user-list>
+</div>
